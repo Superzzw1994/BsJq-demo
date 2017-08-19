@@ -1,0 +1,211 @@
+.container {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 960px) {
+	.container {
+		width: 960px;
+	}
+}
+
+@media (min-width: 1205px) {
+	.container {
+		width: 1206px;
+	}
+}
+
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*头部样式*/
+
+.header {
+	background-color: #f3f3f3;
+	height: 36px;
+	line-height: 36px;
+}
+
+.header-left {
+	float: left;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+
+.header-left span {
+	color: #333333;
+}
+
+.header-left a {
+	color: #21a557;
+	cursor: pointer;
+}
+
+.header-left a:hover {
+	text-decoration: none;
+}
+
+.header-right {
+	float: right;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.header-right i {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background: url("../imgs/spirit.png") -284px -27px;
+}
+
+.header-right span {
+	color: #333333;
+}
+
+
+/*头部样式结束*/
+
+
+/*bannar样式开始*/
+
+.bannar {
+	height: 90px;
+	background-color: #ffffff;
+}
+
+.bannar-left {
+	float: left;
+}
+
+.bannar-left a {
+	float: left;
+	display: inline-block;
+	font-size: 22px;
+	line-height: 90px;
+	font-family: "Hiragino Sans GB";
+	color: #333333;
+}
+
+.bannar-left a:hover {
+	text-decoration: none;
+}
+
+.bannar-left a i {
+	display: inline-block;
+	width: 70px;
+	height: 19px;
+	background: url("../imgs/spirit.png") -223px -3px;
+	vertical-align: text-bottom;
+	margin-right: 14px;
+}
+
+.bannar-left .btn {
+	display: inline-block;
+	padding: 0 9px;
+	margin: 0 10px 0 30px;
+	font-size: 12px;	
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	background-image: none;
+	border: none;
+	border-radius: 2px;
+	
+}
+.btn-success {
+  color: #ffffff;
+  background-color: #21a557;
+  border-color: #4cae4c;
+}
+.bannar-left span {
+	display: inline-block;
+	font-size:12px;
+	line-height: 90px;
+	font-family: "SimSun Regular";
+}
+.bannar-right {
+	float: right;
+}
+.bannar-right ul{
+	margin-bottom:0 ;
+}
+.bannar-right ul li {
+	float: left;
+	line-height: 90px;
+	font-size: 16px;
+	font-family:"Hiragino Sans GB" ;
+	cursor: pointer;
+}
+.li-searchlink{
+	padding: 0 28px;
+}
+.li-searchlink a{
+	color:#666666;
+}
+.li-searchlink a:hover{
+	color:#39a030;
+}
+.li-searchicon{
+	padding:36px 16px 0 0;
+}
+.li-searchicon i{
+	display: block;
+	width:18px;
+	height:18px;
+	background: url("../imgs/spirit.png") 0 0;
+}
+.li-searchicon i:hover{
+	background: url("../imgs/spirit.png") 0 -18px;
+}
+/*bannai样式结束*/
+/*三个产品样式开始*/
+.row{
+	margin: 0 auto;
+}
+.class-content{
+	padding: 60px 0;
+}
+.class-img1{
+	display: inline-block;
+	width:80px;
+	height: 80px;
+	background: url("../imgs/spirit.png") 0 -83px;
+}
+.class-img2{
+	display: inline-block;
+	width:80px;
+	height: 80px;
+	background: url("../imgs/spirit.png") -80px -83px;
+}
+.class-img3{
+	display: inline-block;
+	width:80px;
+	height: 80px;
+	background: url("../imgs/spirit.png") -160px -83px;
+}
+.class-img1:hover , .class-img2:hover , .class-img3:hover{
+	transform: scale(1.2);
+}
+.class-content h2{
+	font-size: 22px;
+	font-family: "微软雅黑";
+	margin-bottom: 15px;
+}
+.class-content p{
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "微软雅黑";
+}
+.class-content a{
+	display: block;
+	font-size: 14px;
+	color:#39a030;
+	padding-top: 30px;
+}
+.class-content a:hover{
+	text-decoration: underline;
+}
+/*三个产品样式结束*/
