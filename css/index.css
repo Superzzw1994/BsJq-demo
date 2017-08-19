@@ -20,7 +20,10 @@
 	margin-left: auto;
 }
 
-
+.warper{
+	height: auto;
+	min-height: 100%;
+}
 /*头部样式*/
 
 .header {
@@ -209,3 +212,14 @@
 	text-decoration: underline;
 }
 /*三个产品样式结束*/
+/*sticky footer*/
+.content{
+	padding-bottom: 262px;
+}
+.footer{
+	position: relative;
+	margin-bottom: -262px;
+	height: 262px;
+	background-color: #2c3339;
+}
+/*sticky footer结束*/

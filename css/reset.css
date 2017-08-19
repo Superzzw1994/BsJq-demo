@@ -77,3 +77,6 @@ a{
 .p_0{
 	padding: 0;
 }
+html,body,.warper{
+	height: 100%;
+}
