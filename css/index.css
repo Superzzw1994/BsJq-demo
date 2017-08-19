@@ -221,5 +221,53 @@
 	margin-bottom: -262px;
 	height: 262px;
 	background-color: #2c3339;
+	padding: 79px 0;
+}
+.footer-logo{
+	display: inline-block;
+	font-size: 22px;
+	color:#39a030;
+	font-family: "Hiragino Sans GB"";
+}
+.footer-logo i {
+	display: inline-block;
+	width: 70px;
+	height: 19px;
+	background: url("../imgs/spirit.png") -223px -3px;
+	vertical-align: bottom;
+	margin-right: 14px;
+}
+.f-description{
+	font-size: 12.5px;
+	line-height:25px;
+	font-family: "微软雅黑";
+	color:#939699;
+}
+.footer-href ,.footer-href a{
+	color:#6b7074;
+}
+.footer-href p{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	margin-bottom: 8px;
+}
+.footer-href li{
+	font-size: 16px;
+	line-height: 30px;
+	font-family: "微软雅黑";
+	vertical-align: middle;
+	cursor: pointer;
+}
+.footer-href li a:hover{
+	text-decoration: underline;
+}
+.footer-href i{
+	display: inline-block;
+	width:22px;
+	height:17px;
+	line-height: 30px;
+	margin-left: 10px;
+	vertical-align: middle;
+	background: url("../imgs/spirit.png") -198px -17px;
 }
 /*sticky footer结束*/

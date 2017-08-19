@@ -77,6 +77,15 @@ a{
 .p_0{
 	padding: 0;
 }
+.p_50{
+	padding: 0 50px;
+}
+.p_80{
+	padding: 80px 0;
+}
+.m_20{
+	margin-bottom: 20px;
+}
 html,body,.warper{
 	height: 100%;
 }
