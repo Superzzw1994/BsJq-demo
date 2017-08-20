@@ -20,10 +20,12 @@
 	margin-left: auto;
 }
 
-.warper{
+.warper {
 	height: auto;
 	min-height: 100%;
 }
+
+
 /*头部样式*/
 
 .header {
@@ -109,126 +111,252 @@
 	display: inline-block;
 	padding: 0 9px;
 	margin: 0 10px 0 30px;
-	font-size: 12px;	
+	font-size: 12px;
 	line-height: 20px;
 	text-align: center;
 	cursor: pointer;
 	background-image: none;
 	border: none;
 	border-radius: 2px;
-	
 }
+
 .btn-success {
-  color: #ffffff;
-  background-color: #21a557;
-  border-color: #4cae4c;
+	color: #ffffff;
+	background-color: #21a557;
+	border-color: #4cae4c;
 }
+
 .bannar-left span {
 	display: inline-block;
-	font-size:12px;
+	font-size: 12px;
 	line-height: 90px;
 	font-family: "SimSun Regular";
 }
+
 .bannar-right {
 	float: right;
 }
-.bannar-right ul{
-	margin-bottom:0 ;
+
+.bannar-right ul {
+	margin-bottom: 0;
 }
+
 .bannar-right ul li {
 	float: left;
 	line-height: 90px;
 	font-size: 16px;
-	font-family:"Hiragino Sans GB" ;
+	font-family: "Hiragino Sans GB";
 	cursor: pointer;
 }
-.li-searchlink{
+
+.li-searchlink {
 	padding: 0 28px;
 }
-.li-searchlink a{
-	color:#666666;
+
+.li-searchlink a {
+	color: #666666;
 }
-.li-searchlink a:hover{
-	color:#39a030;
+
+.li-searchlink a:hover {
+	color: #39a030;
 }
-.li-searchicon{
-	padding:36px 16px 0 0;
+
+.li-searchicon {
+	padding: 36px 16px 0 0;
 }
-.li-searchicon i{
+
+.li-searchicon i {
 	display: block;
-	width:18px;
-	height:18px;
+	width: 18px;
+	height: 18px;
 	background: url("../imgs/spirit.png") 0 0;
 }
-.li-searchicon i:hover{
+
+.li-searchicon i:hover {
 	background: url("../imgs/spirit.png") 0 -18px;
 }
+
+
 /*bannai样式结束*/
+
+
 /*三个产品样式开始*/
-.row{
+
+.row {
 	margin: 0 auto;
 }
-.class-content{
+
+.class-content {
 	padding: 60px 0;
 }
-.class-img1{
+
+.class-img1 {
 	display: inline-block;
-	width:80px;
+	width: 80px;
 	height: 80px;
 	background: url("../imgs/spirit.png") 0 -83px;
 }
-.class-img2{
+
+.class-img2 {
 	display: inline-block;
-	width:80px;
+	width: 80px;
 	height: 80px;
 	background: url("../imgs/spirit.png") -80px -83px;
 }
-.class-img3{
+
+.class-img3 {
 	display: inline-block;
-	width:80px;
+	width: 80px;
 	height: 80px;
 	background: url("../imgs/spirit.png") -160px -83px;
 }
-.class-img1:hover , .class-img2:hover , .class-img3:hover{
+
+.class-img1:hover,
+.class-img2:hover,
+.class-img3:hover {
 	transform: scale(1.2);
 }
-.class-content h2{
+
+.class-content h2 {
 	font-size: 22px;
 	font-family: "微软雅黑";
 	margin-bottom: 15px;
 }
-.class-content p{
+
+.class-content p {
 	font-size: 14px;
 	line-height: 24px;
 	font-family: "微软雅黑";
 }
-.class-content a{
+
+.class-content a {
 	display: block;
 	font-size: 14px;
-	color:#39a030;
+	color: #39a030;
 	padding-top: 30px;
 }
-.class-content a:hover{
+
+.class-content a:hover {
 	text-decoration: underline;
 }
+
+
 /*三个产品样式结束*/
-/*sticky footer*/
-.content{
-	padding-bottom: 262px;
+
+
+/*无缝轮播开始*/
+
+.slider {
+	padding-bottom: 60px;
+	background-color: #f8f8f8;
 }
-.footer{
+
+.slider ul li {
+	float: left;
+	width: 20%;
+}
+
+
+/*无缝轮播结束*/
+
+
+/*课程内容开始*/
+
+.content-box {
+	background-color: #f8f8f8;
+	padding-bottom: 120px;
+}
+
+.swap-btn {
+	display: block;
+	padding-bottom: 10px;
+}
+
+.swap-btn li {
+	float: left;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #d4d3d3;
+}
+
+.class-box {
+	padding: 20px 20px 0 0;
+	cursor: pointer;
+}
+
+.class-box-bt {
+	padding: 10px 5px;
+	background-color: #ffffff;
+}
+
+.class-box-bt p:nth-child(1) {
+	font-size: 16px;
+	/*font-family: "微软雅黑";*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: 600;
+}
+
+.class-box-bt p:nth-child(2) {
+	font-size: 16px;
+	color: #9f9f9f;
+	margin-top: 10px;
+}
+
+.class-box-bt p:nth-child(3) {
+	width: 43px;
+	line-height: 16px;
+	border: 1px solid #dddddd;
+	border-radius: 2px;
+	font-size: 8px;
+	color: #dddddd;
+	padding-right: 3px;
+	margin-top: 10px;
+}
+.class-box-bt p:nth-child(3) i{
+	display: inline-block;
+	vertical-align: middle;
+	width:9px;
+	height:11px;
+	background: url(../imgs/spirit.png) -38px -24px;
+	margin: 0 6px 0 3px;
+}
+.class-box-bt p:nth-child(4) {
+	font-size: 12px;
+	color: #ff3f00;
+	margin-top: 10px;
+}
+
+
+/*课程内容结束*/
+
+
+/*sticky footer*/
+
+
+
+.footer {
 	position: relative;
 	margin-bottom: -262px;
 	height: 262px;
 	background-color: #2c3339;
 	padding: 79px 0;
 }
-.footer-logo{
+
+.footer-logo {
 	display: inline-block;
 	font-size: 22px;
-	color:#39a030;
+	color: #39a030;
 	font-family: "Hiragino Sans GB"";
+
 }
+
 .footer-logo i {
 	display: inline-block;
 	width: 70px;
@@ -237,37 +365,46 @@
 	vertical-align: bottom;
 	margin-right: 14px;
 }
-.f-description{
+
+.f-description {
 	font-size: 12.5px;
-	line-height:25px;
+	line-height: 25px;
 	font-family: "微软雅黑";
-	color:#939699;
+	color: #939699;
 }
-.footer-href ,.footer-href a{
-	color:#6b7074;
+
+.footer-href,
+.footer-href a {
+	color: #6b7074;
 }
-.footer-href p{
+
+.footer-href p {
 	font-size: 14px;
 	font-family: "微软雅黑";
 	margin-bottom: 8px;
 }
-.footer-href li{
+
+.footer-href li {
 	font-size: 16px;
 	line-height: 30px;
 	font-family: "微软雅黑";
 	vertical-align: middle;
 	cursor: pointer;
 }
-.footer-href li a:hover{
+
+.footer-href li a:hover {
 	text-decoration: underline;
 }
-.footer-href i{
+
+.footer-href i {
 	display: inline-block;
-	width:22px;
-	height:17px;
+	width: 22px;
+	height: 17px;
 	line-height: 30px;
 	margin-left: 10px;
 	vertical-align: middle;
 	background: url("../imgs/spirit.png") -198px -17px;
 }
+
+
 /*sticky footer结束*/
