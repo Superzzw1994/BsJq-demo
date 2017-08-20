@@ -60,12 +60,17 @@
 }
 
 .header-right i {
+	/*position: absolute;*/
 	display: inline-block;
 	width: 9px;
 	height: 9px;
 	background: url("../imgs/spirit.png") -284px -27px;
+	transform: rotate(0deg);
+	transition: .5s;
 }
-
+.header-right:hover i{
+	transform: rotate(180deg);
+}
 .header-right span {
 	color: #333333;
 }
@@ -195,6 +200,8 @@
 	width: 80px;
 	height: 80px;
 	background: url("../imgs/spirit.png") 0 -83px;
+	transform: rotate(0deg);
+	transition: .5s;
 }
 
 .class-img2 {
@@ -202,6 +209,8 @@
 	width: 80px;
 	height: 80px;
 	background: url("../imgs/spirit.png") -80px -83px;
+	transform: rotate(0deg);
+	transition: .5s;
 }
 
 .class-img3 {
@@ -209,12 +218,14 @@
 	width: 80px;
 	height: 80px;
 	background: url("../imgs/spirit.png") -160px -83px;
+	transform: rotate(0deg);
+	transition: .5s;
 }
 
 .class-img1:hover,
 .class-img2:hover,
 .class-img3:hover {
-	transform: scale(1.2);
+	transform: rotate(360deg);
 }
 
 .class-content h2 {
