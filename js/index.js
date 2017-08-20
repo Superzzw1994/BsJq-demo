@@ -21,5 +21,9 @@ function zzw(util) {
 		$(".header").hide();
 	} else {
 		console.log(false);
+		$(".header").drag();
 	}
 }
+
+var zzw = new modal();
+$(".mask-box").drag(30);
