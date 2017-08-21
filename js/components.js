@@ -15,12 +15,12 @@ $.fn.extend({
 				} else if(L > $(window).width() - $(this).width() - para) {
 					L = $(window).width() - $(this).width();
 					$(this).css('left', L + parseInt($(this).width()/2));
-					console.log("L" + L);
 				} else {
 					$(this).css('left', L + parseInt($(this).width()/2));
 				}
 				if(T < para) {
 					$(this).css('top', parseInt($(this).height()/2));
+			
 				} else if(T > $(window).height() - $(this).height() - para) {
 					T = $(window).height() - $(this).height();
 					$(this).css('top', T + parseInt($(this).height()/2));
@@ -39,14 +39,15 @@ $.fn.extend({
 });
 
 //弹窗
-(function() {
-	function modal(para) {
-		this.init();
-	}
-	modal.prototype.init = function() {
-		console.log(1);
-	}
-	window.modal = modal;
-})();
+	$.modal = function (para) {
+		$.fn.Modal_init(para);
+	};
+	$.fn.extend({
+		Modal_init : function(para){			
+			var tem = $("<"+para.tar +"></"+para.tar +">");
+			tem.addClass(para.classname);
+			tem.insertAfter(para.target);
+		}
+	})
 
 

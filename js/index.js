@@ -21,9 +21,21 @@ function zzw(util) {
 		$(".header").hide();
 	} else {
 		console.log(false);
-		$(".header").drag();
+		$.modal({
+			classname: "mask",
+			tar: "div",
+			target: ".warper"
+		});
 	}
 }
-
-var zzw = new modal();
+//$.modal({
+//	classname : "mask",
+//	tar:"div",
+//	target:".warper"
+//});
+//$.modal({
+//	classname : "z",
+//	tar:"div",
+//	target:".warper"
+//})
 $(".mask-box").drag(30);
