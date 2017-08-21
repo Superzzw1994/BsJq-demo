@@ -35,6 +35,11 @@ $.fn.extend({
 			$(this).off("mousemove");
 		});
 
+	},
+	Modal_init : function(para){			
+		var tem = $("<"+para.tar +"></"+para.tar +">");
+		tem.addClass(para.classname);
+		tem.insertAfter(para.target);
 	}
 });
 
@@ -42,12 +47,5 @@ $.fn.extend({
 	$.modal = function (para) {
 		$.fn.Modal_init(para);
 	};
-	$.fn.extend({
-		Modal_init : function(para){			
-			var tem = $("<"+para.tar +"></"+para.tar +">");
-			tem.addClass(para.classname);
-			tem.insertAfter(para.target);
-		}
-	})
-
+	
 

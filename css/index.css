@@ -431,11 +431,64 @@
 .mask-box{
 	width: 390px;
 	height: 290px;
-	background-color: red;
+	background-color: #ffffff;
 	position: fixed;
 	top:50%;
 	left: 50%;
 	margin-left: -195px;
 	margin-top: -145px;
 	z-index: 1000;
+	padding: 30px 50px 36px 40px;
+}
+.mask-box p{
+	font-size: 18px;
+	font-weight: 800px;
+	font-family: "微软雅黑";
+	margin-bottom: 5px;
+}
+.mask-box i{
+	display: inline-block;
+	cursor: pointer;
+	width:11px;
+	height: 11px;
+	background:url("../imgs/spirit.png") -18px -10px;
+	position: absolute;
+	top:10px;
+	right: 8px;
+}
+.mask-box i:hover{
+	transform: scale(1.2);
+	transition: .5s;
+}
+.mask-box input{
+	float:left;
+	width: 100%;
+	height: 43px;
+	border:1px solid #dfdfdf;
+	line-height: 43px;
+	font-size: 16px;
+	background-color: #fafafa;
+	color:#cccccc;
+	font-family: "微软雅黑";
+	padding: 0 12px;
+	margin-top:15px;
+
+}
+.mask-box label{
+	float: left;
+	position: absolute;
+	top:28px;
+	left:12px;
+	font-size: 16px;
+	color:#cccccc;
+	font-family: "微软雅黑";
+	cursor: text;
+}
+.mask-box button{
+	width:100%;
+	height: 46px;
+	border:none;
+	padding: 0;
+	margin-top:30px;
+	background:url("../imgs/spirit.png") 0 -37px;
 }

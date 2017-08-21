@@ -12,7 +12,10 @@ $(document).ready(
 		}
 	}
 );
-
+//阻止表单默认提交
+$("form").submit(function(e){
+	e.preventDefault();
+})
 function zzw(util) {
 	//如果已登录，隐藏
 	util.setCookie("status", "1", 4000)
@@ -28,14 +31,14 @@ function zzw(util) {
 		});
 	}
 }
-//$.modal({
-//	classname : "mask",
-//	tar:"div",
-//	target:".warper"
-//});
+$.modal({
+	classname : "mask",
+	tar:"div",
+	target:".warper"
+});
 //$.modal({
 //	classname : "z",
 //	tar:"div",
 //	target:".warper"
 //})
-$(".mask-box").drag(30);
+// $(".mask-box").drag(30);
