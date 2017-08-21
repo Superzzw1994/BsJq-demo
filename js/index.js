@@ -20,10 +20,8 @@ function zzw(util) {
 	//如果已登录，隐藏
 	util.setCookie("status", "1", 4000)
 	if(util.getCookie("isLogin")) {
-		console.log(true);
 		$(".header").hide();
 	} else {
-		console.log(false);
 		$.modal({
 			classname: "mask",
 			tar: "div",
