@@ -89,3 +89,14 @@ a{
 html,body,.warper{
 	height: 100%;
 }
+.hide{
+	display: none;
+}
+.btn-active{
+	background-color: #39a030;
+	color:#ffffff;
+}
+.btn-normal{
+	background-color: #ffffff;
+	color: #666666;
+}
