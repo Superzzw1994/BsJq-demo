@@ -30,13 +30,51 @@ function zzw(util) {
 	}
 }
 $.modal({
-	classname : "mask",
+	classname : "mask hide",
 	tar:"div",
 	target:".warper"
 });
-//$.modal({
-//	classname : "z",
-//	tar:"div",
-//	target:".warper"
-//})
+
 // $(".mask-box").drag(30);
+
+//弹出事件
+function show(trigger,target){
+	$(trigger).click(function(){
+		console.log(1);
+		$(target.child).removeClass("hide").addClass("animated bounceIn").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			// $(target.child).removeClass().addClass("hide");
+		});
+		$(target.parent).removeClass("hide").fadeIn(500);
+	})
+}
+show("#show_but",{
+	child:".mask-box",
+	parent:".mask"
+})
+//点击关闭事件
+
+function shutdown(trigger,target){
+	$(trigger).click(function(){
+		$(target.child).addClass("animated bounceOut").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			$(target.child).removeClass().addClass("mask-box hide");
+		});
+		$(target.parent).fadeOut(1000);
+	})
+}
+
+shutdown("#close-login",{
+	child:".mask-box",
+	parent:".mask"
+});
+//模拟placeHolder
+function placeholder(id,target){
+	$(target).bind("input propertychange",function(){
+		if($(target).val() == ""){
+			$(id).addClass("show");
+		}else{
+			$(id).removeClass("show").addClass("hide");
+		}
+	})
+}
+placeholder("#username-label","#username");
+placeholder("#password-label","#password");

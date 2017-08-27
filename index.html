@@ -8,6 +8,7 @@
 		<title>网易教育产品部</title>
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/index.css" />
 		<script type="text/javascript" src="js/jquery-3.2.1.js">
 		</script>
@@ -37,7 +38,7 @@
 				<div class="container bannar">
 					<div class="bannar-left">
 						<a href=""><i></i>网易教育产品部</a>
-						<button class="btn btn-success">+关注</button>
+						<button class="btn btn-success" id="show_but">+关注</button>
 						<span>粉丝45</span>
 					</div>
 					<div class="bannar-right">
@@ -244,16 +245,16 @@
 			</div>
 			<!--sticky footer结束-->
 		</div>
-		<div class="mask-box">
-			<i></i>
+		<div class="mask-box hide">
+			<i id="close-login"></i>
 			<p>登录网易云课堂</p>
 			<form action="#" method="get" autocomplete="off" id="stop-sub">
 				<div class="row p_r m_15">
-					<label for="username">账号</label>
+					<label for="username" id="username-label">账号</label>
 					<input type="text" id="username">
 				</div>
 				<div class="row p_r m_15">
-					<label for="password">密码</label>
+					<label for="password" id="password-label">密码</label>
 					<input type="password" id="password">
 				</div>
 				<div class="row p_3">
